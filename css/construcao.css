@@ -12,6 +12,11 @@
     align-items: center;
 }
 
+
+.container-const div p {
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
     .container-const {
         flex-direction: row;
@@ -21,8 +26,14 @@
     .image-const img {
         height: 300px;
     }
+}
+
+@media (min-width: 1024px) {
+    .image-const img {
+        height: 400px;
+    }
 
     .container-const div p {
-        font-weight: bold;
+        font-size:25px;
     }
 }
