@@ -5,102 +5,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Projeto Elogica</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">Adventurer</div>
         <div class="naveg">
             <ul>
                 <li><a href="#sec1">Início</a></li>
                 <li><a href="#sec3">Aventuras</a></li>
                 <li><a href="#sec4">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="construcao.html">Blog</a></li>
             </ul>
         </div>
         <button class="button"><a href="">Inicie sua aventura!</a></button>
+        <!-- <div class="">a</div> -->
+
+        <ion-icon id="menu-icon" name="menu"></ion-icon>
     </header>
-    <section class="container" id="#sec1">
-        <div class="content">
-            <h1>Estamos aqui para encontrar <br>
-                <span class="highlight">Sua Nova Aventura 🌞</span>
-            </h1>
-            <p> Tentamos deixar sua vida mais animada do que antes e oferecemos tudo o
-                que você precisa para uma viagem memorável da maneira mais simples possível.
-            </p>
-            <div class="form">
-                <input type="text" placeholder="Check in/out">
-                <input type="text" placeholder="Passageiros">
-                <button>Iniciar aventura</button>
+
+    <main>
+        <section class="section1" id="sec1">
+            <div class="content">
+                <h1>Estamos aqui para encontrar <br>
+                    <span class="highlight">Sua Nova Aventura 🌞</span>
+                </h1>
+                <p> Tentamos deixar sua vida mais animada do que antes e oferecemos tudo o
+                    que você precisa para uma viagem memorável da maneira mais simples possível.
+                </p>
+                <div class="form">
+                    <input type="text" placeholder="Check in/out">
+                    <input type="text" placeholder="Passageiros">
+                    <button>Iniciar aventura</button>
+                </div>
             </div>
-        </div>
-        <div class="image">
-            <img src="/assets/viagem-cachorro.svg" alt="Ilustração de viagem">
-        </div>
-    </section>
-    <section class="section2">
-        <ul class="list">
-            <li>
-                <h4>Porque escolher a gente?</h4>
-            </li>
-            <li>
-                <h2>🌟</h2>
-                <h4>Pacotes especiais</h4>
-                <p>Incentivamos a você a tentar novidades.</p>
-            </li>
-            <li>
-                <h2>🔁</h2>
-                <h4>Simplificação</h4>
-                <p>Facilitamos como você viaja pelos melhores lugares do mundo.</p>
-            </li>
-            <li>
-                <h2>🔥</h2>
-                <h4>Melhores serviços</h4>
-                <p>Criamos experiências especiais para você.</p>
-            </li>
-            <li>
-                <h2>🎧</h2>
-                <h4>Suporte 24h</h4>
-                <p>A qualquer momento, de qualquer lugar estamos aqui para te atender.</p>
-            </li>
-        </ul>
-    </section>
+            <div class="image">
+                <img src="/assets/viagem-cachorro.svg" alt="Ilustração de viagem">
+            </div>
+        </section>
+
+        <section class="section2">
+            <ul class="list">
+                <li>
+                    <h4>Porque escolher a gente?</h4>
+                </li>
+                <li>
+                    <h2>🌟</h2>
+                    <h4>Pacotes especiais</h4>
+                    <p>Incentivamos a você a tentar novidades.</p>
+                </li>
+                <li>
+                    <h2>🔁</h2>
+                    <h4>Simplificação</h4>
+                    <p>Facilitamos como você viaja pelos melhores lugares do mundo.</p>
+                </li>
+                <li>
+                    <h2>🔥</h2>
+                    <h4>Melhores serviços</h4>
+                    <p>Criamos experiências especiais para você.</p>
+                </li>
+                <li>
+                    <h2>🎧</h2>
+                    <h4>Suporte 24h</h4>
+                    <p>A qualquer momento, de qualquer lugar estamos aqui para te atender.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
     <section class="section3" id="sec3">
         <div class="title-sec">
             <h1>Nossos melhores destinos</h1>
             <p>Vamos encontrar alguns deles</p>
         </div>
         <ul class="list-sec3">
-            <div class="img-sec3">
-                <li><img id="inverno" src="/assets/inverno.png" alt=""></li>
+            <div class="img-sec3" id="img1">
                 <label for="">💧 Inverno</label>
             </div>
-            <div class="img-sec3">
-                <li><img src="/assets/outono.png" alt=""></li>
+            <div class="img-sec3" id="img2">
                 <label for="">🍂 Outono</label>
             </div>
-            <div class="img-sec3">
-                <li><img src="/assets/primavera.png" alt=""></li>
+            <div class="img-sec3" id="img3">
                 <label for="">🌸 Primavera</label>
             </div>
-            <div class="img-sec3">
-                <li><img src="/assets/verao.png" alt=""></li>
-                <label for="">🌞 Inverno</label>
+            <div class="img-sec3" id="img4">
+                <label for="">🌞 Verão</label>
             </div>
         </ul>
     </section>
 
     <section class="section4" id="sec4">
-        <div>
-            <img src="/assets/objetivo.svg" alt="">
+        <div class="div-sec4">
+            <div class="div-img-sec4">
+                <img class="img-sec4" src="/assets/objetivo.svg" alt="">
+            </div>
+            <div class="div-text-sec4">
+                <h1>Como podemos garantir uma viagem incrível?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae
+                    labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt? orem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae
+                    labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt? orem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae
+                    labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt?</p>
+            </div>
         </div>
-        <div>
-            <h1>Como podemos garantir uma viagem incrível?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt?</p>
+        <div class="div2-sec4">
+            <div class="div-left">
+                <h1>Temos muita sorte de ter você e sua confiança</h1>
+                <div class="div-list">
+                    <ul class="list-sec4">
+                        <li>
+                            <h4>+5000</h4>
+                            <p>Aventureiros</p>
+                        </li>
+                        <li>
+                            <h4>+8000</h4>
+                            <p>Viagens</p>
+                        </li>
+
+                        <li>
+                            <h4>98%</h4>
+                            <p class="texto">Satisfação do consumidor</p>
+                        </li>
+                    </ul>
+                    <ul class="list-sec4">
+                        <li>
+                            <h4>95%</h4>
+                            <p>Avaliações 5 estrelas</p>
+                        </li>
+                        <li>
+                            <h4>+120</h4>
+                            <p>Destinos exclusivos</p>
+                        </li>
+                        <li>
+                            <h4>24/7</h4>
+                            <p>Suporte ao cliente</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-right">
+                <img class="img-sec4" src="/assets/comunidade.svg" alt="">
+            </div>
+        </div>
+        <div class="div3-sec4">
+            <div>
+                <img class="img-sec4" src="/assets/global.svg" alt="">
+            </div>
+            <div class="div-tex-sec4">
+                <h1>Junte-se a nossa familia e torne-se um aventureiro</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae
+                    labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt? orem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae
+                    labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt? orem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum earum quidem mollitia vitae
+                    labore quo, tempore et quos ab dolorem velit odit quia nostrum sapiente saepe maxime in sunt?</p>
+            </div>
         </div>
     </section>
+
+
+    <a class="button-topo" href="#header"><img src="../assets/pra-cima.png" alt=""></a>
+    <footer class="footer">
+        <div class="div-service">
+            <div>
+                <ul class="list-footer">
+                    <li>
+                        <h4>Serviços</h4>
+                    </li>
+                    <li>
+                        <p>Viagens</p>
+                    </li>
+                    <li>
+                        <p>Hóteis</p>
+                    </li>
+                    <li>
+                        <p>Guias</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list-footer">
+                    <li>
+                        <h4>Sobre</h4>
+                    </li>
+                    <li>
+                        <p>Empresa</p>
+                    </li>
+                    <li>
+                        <p>Time</p>
+                    </li>
+                    <li>
+                        <p>Legado</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list-footer">
+                    <li>
+                        <h4>Carreira</h4>
+                    </li>
+                    <li>
+                        <p>Trabalhe Conosco</p>
+                    </li>
+                    <li>
+                        <p>Depoimentos</p>
+                    </li>
+                    <li>
+                        <p>Benefícios</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="div-media">
+                <ul class="list-media">
+                    <li><img src="../assets/facebook (1).png" alt=""></li>
+                    <li><img src="../assets/twitter.png" alt=""></li>
+                    <li><img src="../assets/instagram.png" alt=""></li>
+                    <li><img src="../assets/linkedin.png" alt=""></li>
+                </ul>
+                <div>
+                    <p>Adventurer © 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

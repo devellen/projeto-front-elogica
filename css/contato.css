@@ -1,0 +1,33 @@
+.container-cont {
+    background-color: #f4c066;
+    height: 75vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 20px;
+
+}
+.div-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+.container-cont h2 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.div-textarea {
+    display: flex;
+    justify-content: center;
+
+}
+
+.textarea {
+    height: 100px;
+}
